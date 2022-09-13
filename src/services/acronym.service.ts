@@ -15,9 +15,18 @@ class AcronymService {
   }
 
   public async findDataByFilter(from: number, limit: number, search: string): Promise<any> {
+    if (limit < 1 || from < 0) {
+      throw new HttpException(400, 'Invalid Params');
+    }
     const findData: any = this.acronym;
     if (!findData) throw new HttpException(409, "Data doesn't exist");
-    return findData[0].slice(from - 1, from + limit - 1);
+    const findAcronyms: any[] = this.acronym[0].filter(acronym => {
+      const key = Object.keys(acronym)[0];
+      if (key.search(search) !== -1 || acronym[key].search(search) !== -1) {
+        return acronym;
+      }
+    });
+    return findAcronyms.slice(from - 1, from + limit - 1);
   }
 
   public async createData(data: CreateDataDto): Promise<any> {
