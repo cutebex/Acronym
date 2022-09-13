@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/interfaces/acronym.interface.ts"],"sourcesContent":["export interface Acronym {\n  id: number;\n  email: string;\n  password: string;\n}\n"],"names":[],"mappings":"AAAA"}
