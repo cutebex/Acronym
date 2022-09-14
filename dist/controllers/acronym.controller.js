@@ -32,6 +32,7 @@ let AcronymController = class AcronymController {
         this.createData = async (req, res, next)=>{
             try {
                 const userData = req.body;
+                console.log('create ', userData);
                 const createUserData = await this.acronymService.createData(userData);
                 res.status(201).json({
                     data: createUserData,
@@ -57,6 +58,7 @@ let AcronymController = class AcronymController {
         this.deleteData = async (req, res, next)=>{
             try {
                 const acronym = req.params.acronym;
+                console.log(req.params);
                 const deleteUserData = await this.acronymService.deleteData(acronym);
                 res.status(200).json({
                     data: deleteUserData,

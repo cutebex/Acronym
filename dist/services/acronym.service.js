@@ -45,10 +45,6 @@ function _objectSpread(target) {
     return target;
 }
 let AcronymService = class AcronymService {
-    async findAllUser() {
-        const acronym = this.acronym;
-        return acronym;
-    }
     async findDataByFilter(from, limit, search) {
         if (limit < 1 || from < 0) {
             throw new _httpException.HttpException(400, 'Invalid Params');
@@ -56,9 +52,9 @@ let AcronymService = class AcronymService {
         const findData = this.acronym;
         if (!findData) throw new _httpException.HttpException(409, "Data doesn't exist");
         if (search === 'undefined') {
-            return findData[0].slice(from - 1, from + limit - 1);
+            return findData.slice(from - 1, from + limit - 1);
         } else {
-            const findAcronyms = this.acronym[0].filter((acronym)=>{
+            const findAcronyms = this.acronym.filter((acronym)=>{
                 const key = Object.keys(acronym)[0];
                 if (key.search(search) !== -1 || acronym[key].search(search) !== -1) {
                     return acronym;
@@ -68,13 +64,13 @@ let AcronymService = class AcronymService {
         }
     }
     async createData(data) {
-        this.acronym[0].map((key)=>{
+        this.acronym.map((key)=>{
             if (Object.keys(key)[0] === data.acronym) {
                 throw new _httpException.HttpException(409, 'Data already exist');
             }
         });
         const createUserData = _objectSpread({}, data);
-        this.acronym[0].push({
+        this.acronym.push({
             [data.acronym]: data.definition
         });
         const newData = JSON.stringify(this.acronym);
@@ -90,7 +86,7 @@ let AcronymService = class AcronymService {
     async updateData(acronym, definition) {
         if ((0, _util.isEmpty)(definition)) throw new _httpException.HttpException(400, 'definition is empty');
         const newArr = [];
-        this.acronym[0].map((key)=>{
+        this.acronym.map((key)=>{
             if (Object.keys(key)[0] === acronym) {
                 newArr.push(definition);
             }
@@ -99,7 +95,7 @@ let AcronymService = class AcronymService {
             throw new _httpException.HttpException(409, "Acronym doesn't exist");
         }
         const newData = [];
-        this.acronym[0].map((key)=>{
+        this.acronym.map((key)=>{
             if (Object.keys(key)[0] === acronym) {
                 newData.push({
                     [Object.keys(key)[0]]: definition
@@ -121,7 +117,7 @@ let AcronymService = class AcronymService {
     }
     async deleteData(acronym) {
         const newArr = [];
-        this.acronym[0].map((key)=>{
+        this.acronym.map((key)=>{
             if (Object.keys(key)[0] === acronym) {
                 newArr.push(acronym);
             }
@@ -130,7 +126,7 @@ let AcronymService = class AcronymService {
             throw new _httpException.HttpException(409, "Acronym doesn't exist");
         }
         const newData = [];
-        this.acronym[0].map((key)=>{
+        this.acronym.map((key)=>{
             if (Object.keys(key)[0] !== acronym) {
                 newData.push({
                     [Object.keys(key)[0]]: key[Object.keys(key)[0]]
@@ -147,7 +143,7 @@ let AcronymService = class AcronymService {
         return newArr;
     }
     constructor(){
-        this.acronym = _acronymModel.default;
+        this.acronym = _acronymModel.default.readFile();
     }
 };
 const _default = AcronymService;

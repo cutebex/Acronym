@@ -23,6 +23,7 @@ function _interopRequireDefault(obj) {
         default: obj
     };
 }
+const swaggerJSON = require('../swagger.json');
 let App = class App {
     listen() {
         this.app.listen(this.port, ()=>{
@@ -59,19 +60,26 @@ let App = class App {
     }
     initializeSwagger() {
         const options = {
-            swaggerDefinition: {
+            definition: {
+                openapi: '3.0.0',
                 info: {
-                    title: 'REST API',
+                    title: 'Acronym API',
                     version: '1.0.0',
-                    description: 'Example docs'
-                }
+                    description: 'Build a REST API for the World Texting Foundation, also known as WTF'
+                },
+                servers: [
+                    {
+                        url: 'http://localhost:3000',
+                        description: 'My API Documentation'
+                    }, 
+                ]
             },
             apis: [
-                'swagger.yaml'
+                'swagger.json'
             ]
         };
         const specs = (0, _swaggerJsdoc.default)(options);
-        this.app.use('/api-docs', _swaggerUiExpress.default.serve, _swaggerUiExpress.default.setup(specs));
+        this.app.use('/api-docs', _swaggerUiExpress.default.serve, _swaggerUiExpress.default.setup(swaggerJSON));
     }
     initializeErrorHandling() {
         this.app.use(_errorMiddleware.default);
