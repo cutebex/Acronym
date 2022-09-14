@@ -18,7 +18,8 @@
     "heroku-postbuild": "npm run build"
   },
   "engines": {
-    "node": "15.8.0"
+    "node": "15.8.0",
+    "npm": "7.5.1"
   },
   "dependencies": {
     "bcrypt": "^5.0.1",
