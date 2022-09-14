@@ -1,5 +1,5 @@
 {
-  "name": "acronym",
+  "name": "wsf-project",
   "version": "0.0.0",
   "description": "TypeScript + Express API Server",
   "author": "",
@@ -13,7 +13,11 @@
     "lint": "eslint --ignore-path .gitignore --ext .ts src/",
     "lint:fix": "npm run lint -- --fix",
     "deploy:prod": "npm run build && pm2 start ecosystem.config.js --only prod",
-    "deploy:dev": "pm2 start ecosystem.config.js --only dev"
+    "deploy:dev": "pm2 start ecosystem.config.js --only dev",
+    "postinstall": "tsc"
+  },
+  "engines": {
+    "node": "15.8.0"
   },
   "dependencies": {
     "bcrypt": "^5.0.1",
