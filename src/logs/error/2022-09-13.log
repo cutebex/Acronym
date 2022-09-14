@@ -1,0 +1,268 @@
+2022-09-13 00:00:28 error: [GET] /acronym >> StatusCode:: 500, Message:: findData[0].slice is not a function
+2022-09-13 00:00:37 error: [GET] /acronym >> StatusCode:: 500, Message:: findData[0].slice is not a function
+2022-09-13 00:01:00 error: [GET] /acronym >> StatusCode:: 500, Message:: findData[0].slice is not a function
+2022-09-13 00:29:52 error: [POST] /acronym >> StatusCode:: 400, Message:: property acronym should not exist, property definition should not exist, key must be a string, value must be a string
+2022-09-13 00:35:21 error: [POST] /acronym >> StatusCode:: 500, Message:: this.acronym[0] is not iterable
+2022-09-13 00:35:42 error: [POST] /acronym >> StatusCode:: 500, Message:: this.acronym[0] is not iterable
+2022-09-13 00:36:12 error: [POST] /acronym >> StatusCode:: 400, Message:: acronym must be a string
+2022-09-13 00:36:21 error: [POST] /acronym >> StatusCode:: 500, Message:: this.acronym[0] is not iterable
+2022-09-13 00:56:38 error: [POST] /acronym >> StatusCode:: 500, Message:: aaaaa is not a function
+2022-09-13 00:56:57 error: [POST] /acronym >> StatusCode:: 500, Message:: aaaaa is not a function
+2022-09-13 01:11:39 error: [POST] /acronym >> StatusCode:: 500, Message:: findData is not defined
+2022-09-13 01:17:49 error: [POST] /acronym >> StatusCode:: 409, Message:: Data already exist
+2022-09-13 01:17:51 error: [POST] /acronym >> StatusCode:: 409, Message:: Data already exist
+2022-09-13 01:18:12 error: [POST] /acronym >> StatusCode:: 409, Message:: Data already exist
+2022-09-13 01:18:26 error: [POST] /acronym >> StatusCode:: 409, Message:: Data already exist
+2022-09-13 01:19:10 error: [POST] /acronym >> StatusCode:: 409, Message:: Data already exist
+2022-09-13 01:19:13 error: [POST] /acronym >> StatusCode:: 409, Message:: Data already exist
+2022-09-13 01:19:38 error: [POST] /acronym >> StatusCode:: 409, Message:: Data already exist
+2022-09-13 01:19:56 error: [POST] /acronym >> StatusCode:: 409, Message:: Data already exist
+2022-09-13 01:20:17 error: [POST] /acronym >> StatusCode:: 409, Message:: Data already exist
+2022-09-13 01:22:38 error: [POST] /acronym >> StatusCode:: 400, Message:: property query should not exist, acronym must be a string, definition must be a string
+2022-09-13 01:25:20 error: [PUT] /acronym/ZZZZ >> StatusCode:: 409, Message:: User doesn't exist
+2022-09-13 01:27:22 error: [PUT] /acronym/ZZZZ >> StatusCode:: 404, Message:: Authentication token missing
+2022-09-13 01:29:02 error: [PUT] /acronym/ZZZZ >> StatusCode:: 401, Message:: Wrong authentication token
+2022-09-13 01:30:10 error: [PUT] /acronym/ZZZZ >> StatusCode:: 401, Message:: Wrong authentication token
+2022-09-13 01:30:33 error: [PUT] /acronym/ZZZZ >> StatusCode:: 401, Message:: Wrong authentication token
+2022-09-13 01:30:46 error: [PUT] /acronym/ZZZZ >> StatusCode:: 401, Message:: Wrong authentication token
+2022-09-13 01:30:53 error: [PUT] /acronym/ZZZZ >> StatusCode:: 401, Message:: Wrong authentication token
+2022-09-13 01:31:00 error: [PUT] /acronym/ZZZZ >> StatusCode:: 401, Message:: Wrong authentication token
+2022-09-13 01:31:21 error: [PUT] /acronym/ZZZZ >> StatusCode:: 401, Message:: Wrong authentication token
+2022-09-13 01:31:58 error: [PUT] /acronym/ZZZZ >> StatusCode:: 401, Message:: Wrong authentication
+2022-09-13 01:34:10 error: [PUT] /acronym/ZZZZ >> StatusCode:: 401, Message:: Wrong authentication token
+2022-09-13 01:34:25 error: [PUT] /acronym/ZZZZ >> StatusCode:: 401, Message:: Wrong authentication token
+2022-09-13 01:34:34 error: [PUT] /acronym/ZZZZ >> StatusCode:: 401, Message:: Wrong authentication token
+2022-09-13 01:34:49 error: [PUT] /acronym/ZZZZ >> StatusCode:: 401, Message:: Wrong authentication token
+2022-09-13 01:35:06 error: [PUT] /acronym/ZZZZ >> StatusCode:: 401, Message:: Wrong authentication token
+2022-09-13 01:35:30 error: [PUT] /acronym/ZZZZ >> StatusCode:: 401, Message:: Wrong authentication
+2022-09-13 01:36:23 error: [PUT] /acronym/ZZZZ >> StatusCode:: 401, Message:: Wrong authentication
+2022-09-13 01:36:41 error: [PUT] /acronym/ZZZZ >> StatusCode:: 401, Message:: Wrong authentication
+2022-09-13 01:37:08 error: [PUT] /acronym/ZZZZ >> StatusCode:: 401, Message:: Wrong authentication
+2022-09-13 01:37:34 error: [PUT] /acronym/ZZZZ >> StatusCode:: 401, Message:: Wrong authentication
+2022-09-13 01:37:56 error: [PUT] /acronym/ZZZZ >> StatusCode:: 409, Message:: User doesn't exist
+2022-09-13 01:38:02 error: [PUT] /acronym/ZZZZ >> StatusCode:: 401, Message:: Wrong authentication token
+2022-09-13 01:38:06 error: [PUT] /acronym/ZZZZ >> StatusCode:: 409, Message:: User doesn't exist
+2022-09-13 01:44:24 error: [PUT] /acronym/ZZZZ >> StatusCode:: 500, Message:: findUser is not defined
+2022-09-13 01:44:36 error: [PUT] /acronym/ZZZZ >> StatusCode:: 500, Message:: findUser is not defined
+2022-09-13 01:57:53 error: [PUT] /acronym/ZZZZ >> StatusCode:: 500, Message:: updateUserData is not defined
+2022-09-13 01:58:01 error: [PUT] /acronym/ZZZZ >> StatusCode:: 500, Message:: updateUserData is not defined
+2022-09-13 01:59:02 error: [PUT] /acronym/ZZZZ >> StatusCode:: 500, Message:: updateUserData is not defined
+2022-09-13 02:12:18 error: [DELETE] /acronym/ZZZZ >> StatusCode:: 409, Message:: User doesn't exist
+2022-09-13 02:51:24 error: [DELETE] /acronym/ZZZZ >> StatusCode:: 409, Message:: Acronym doesn't exist
+2022-09-13 02:51:38 error: [PUT] /acronym/ZZZZ >> StatusCode:: 409, Message:: Acronym doesn't exist
+2022-09-13 02:51:40 error: [PUT] /acronym/ZZZZ >> StatusCode:: 409, Message:: Acronym doesn't exist
+2022-09-13 16:00:25 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/acronym.service.ts[0m:[93m30[0m:[93m25[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m30[0m     return findAcronyms0].slice(from - 1, from + limit - 1);
+[7m  [0m [91m                        ~[0m
+[96msrc/services/acronym.service.ts[0m:[93m30[0m:[93m26[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m30[0m     return findAcronyms0].slice(from - 1, from + limit - 1);
+[7m  [0m [91m                         ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/acronym.service.ts[0m:[93m30[0m:[93m25[0m - [91merror[0m[90m TS1005: [0m';' expected.
+
+[7m30[0m     return findAcronyms0].slice(from - 1, from + limit - 1);
+[7m  [0m [91m                        ~[0m
+[96msrc/services/acronym.service.ts[0m:[93m30[0m:[93m26[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m30[0m     return findAcronyms0].slice(from - 1, from + limit - 1);
+[7m  [0m [91m                         ~[0m
+
+    at createTSError (D:\__Work\wtf-project\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\__Work\wtf-project\node_modules\ts-node\src\index.ts:863:19)
+    at D:\__Work\wtf-project\node_modules\ts-node\src\index.ts:1379:34
+    at Object.compile (D:\__Work\wtf-project\node_modules\ts-node\src\index.ts:1458:13)
+    at Module.m._compile (D:\__Work\wtf-project\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\__Work\wtf-project\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:973:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Module.require (node:internal/modules/cjs/loader:997:19)
+2022-09-13 17:00:22 error: [POST] /acronym >> StatusCode:: 409, Message:: Data already exist
+2022-09-13 17:07:37 error: [GET] /acronym >> StatusCode:: 500, Message:: acronym[key].search is not a function
+2022-09-13 18:02:57 error: uncaughtException: Router.use() requires a middleware function but got a Object
+TypeError: Router.use() requires a middleware function but got a Object
+    at Function.use (D:\__Work\wtf-project\node_modules\express\lib\router\index.js:469:13)
+    at Function.<anonymous> (D:\__Work\wtf-project\node_modules\express\lib\application.js:227:21)
+    at Array.forEach (<anonymous>)
+    at Function.use (D:\__Work\wtf-project\node_modules\express\lib\application.js:224:7)
+    at App.initializeSwagger (D:\__Work\wtf-project\src\app.ts:94:14)
+    at new App (D:\__Work\wtf-project\src\app.ts:28:10)
+    at Object.<anonymous> (D:\__Work\wtf-project\src\server.ts:7:13)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Module.m._compile (D:\__Work\wtf-project\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+2022-09-13 18:03:21 error: uncaughtException: Router.use() requires a middleware function but got a Object
+TypeError: Router.use() requires a middleware function but got a Object
+    at Function.use (D:\__Work\wtf-project\node_modules\express\lib\router\index.js:469:13)
+    at Function.<anonymous> (D:\__Work\wtf-project\node_modules\express\lib\application.js:227:21)
+    at Array.forEach (<anonymous>)
+    at Function.use (D:\__Work\wtf-project\node_modules\express\lib\application.js:224:7)
+    at App.initializeSwagger (D:\__Work\wtf-project\src\app.ts:94:14)
+    at new App (D:\__Work\wtf-project\src\app.ts:28:10)
+    at Object.<anonymous> (D:\__Work\wtf-project\src\server.ts:7:13)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Module.m._compile (D:\__Work\wtf-project\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+2022-09-13 18:03:55 error: uncaughtException: Router.use() requires a middleware function but got a Object
+TypeError: Router.use() requires a middleware function but got a Object
+    at Function.use (D:\__Work\wtf-project\node_modules\express\lib\router\index.js:469:13)
+    at Function.<anonymous> (D:\__Work\wtf-project\node_modules\express\lib\application.js:227:21)
+    at Array.forEach (<anonymous>)
+    at Function.use (D:\__Work\wtf-project\node_modules\express\lib\application.js:224:7)
+    at App.initializeSwagger (D:\__Work\wtf-project\src\app.ts:94:14)
+    at new App (D:\__Work\wtf-project\src\app.ts:28:10)
+    at Object.<anonymous> (D:\__Work\wtf-project\src\server.ts:7:13)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Module.m._compile (D:\__Work\wtf-project\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+2022-09-13 18:31:23 error: [POST] /acronym >> StatusCode:: 400, Message:: Unexpected token a in JSON at position 1
+2022-09-13 18:32:33 error: [POST] /acronym >> StatusCode:: 400, Message:: Unexpected token a in JSON at position 1
+2022-09-13 18:33:04 error: [POST] /acronym >> StatusCode:: 400, Message:: Unexpected token a in JSON at position 1
+2022-09-13 18:34:08 error: [POST] /acronym >> StatusCode:: 400, Message:: acronym must be a string, definition must be a string
+2022-09-13 18:39:56 error: [POST] /acronym >> StatusCode:: 400, Message:: Unexpected token s in JSON at position 0
+2022-09-13 18:49:38 error: [DELETE] /acronym/:acronym >> StatusCode:: 409, Message:: Acronym doesn't exist
+2022-09-13 18:51:07 error: [DELETE] /acronym/:acronym >> StatusCode:: 409, Message:: Acronym doesn't exist
+2022-09-13 18:51:10 error: [DELETE] /acronym/:acronym >> StatusCode:: 409, Message:: Acronym doesn't exist
+2022-09-13 18:51:20 error: uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1310:16)
+    at listenInCluster (node:net:1358:12)
+    at Server.listen (node:net:1445:7)
+    at Function.listen (D:\__Work\wtf-project\node_modules\express\lib\application.js:635:24)
+    at App.listen (D:\__Work\wtf-project\src\app.ts:33:14)
+    at Object.<anonymous> (D:\__Work\wtf-project\src\server.ts:9:5)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Module.m._compile (D:\__Work\wtf-project\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\__Work\wtf-project\node_modules\ts-node\src\index.ts:1621:12)
+2022-09-13 18:51:48 error: uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1310:16)
+    at listenInCluster (node:net:1358:12)
+    at Server.listen (node:net:1445:7)
+    at Function.listen (D:\__Work\wtf-project\node_modules\express\lib\application.js:635:24)
+    at App.listen (D:\__Work\wtf-project\src\app.ts:33:14)
+    at Object.<anonymous> (D:\__Work\wtf-project\src\server.ts:9:5)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Module.m._compile (D:\__Work\wtf-project\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\__Work\wtf-project\node_modules\ts-node\src\index.ts:1621:12)
+2022-09-13 18:51:54 error: [DELETE] /acronym/:acronym >> StatusCode:: 409, Message:: Acronym doesn't exist
+2022-09-13 18:54:36 error: uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1310:16)
+    at listenInCluster (node:net:1358:12)
+    at Server.listen (node:net:1445:7)
+    at Function.listen (D:\__Work\wtf-project\node_modules\express\lib\application.js:635:24)
+    at App.listen (D:\__Work\wtf-project\src\app.ts:33:14)
+    at Object.<anonymous> (D:\__Work\wtf-project\src\server.ts:9:5)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Module.m._compile (D:\__Work\wtf-project\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\__Work\wtf-project\node_modules\ts-node\src\index.ts:1621:12)
+2022-09-13 18:55:02 error: uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1310:16)
+    at listenInCluster (node:net:1358:12)
+    at Server.listen (node:net:1445:7)
+    at Function.listen (D:\__Work\wtf-project\node_modules\express\lib\application.js:635:24)
+    at App.listen (D:\__Work\wtf-project\src\app.ts:33:14)
+    at Object.<anonymous> (D:\__Work\wtf-project\src\server.ts:9:5)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Module.m._compile (D:\__Work\wtf-project\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\__Work\wtf-project\node_modules\ts-node\src\index.ts:1621:12)
+2022-09-13 18:56:12 error: [DELETE] /acronym/:acronym >> StatusCode:: 409, Message:: Acronym doesn't exist
+2022-09-13 18:57:09 error: [DELETE] /acronym/:acronym >> StatusCode:: 409, Message:: Acronym doesn't exist
+2022-09-13 18:57:58 error: [DELETE] /acronym/:acronym >> StatusCode:: 409, Message:: Acronym doesn't exist
+2022-09-13 18:58:48 error: [DELETE] /acronym/:acronym >> StatusCode:: 409, Message:: Acronym doesn't exist
+2022-09-13 18:59:09 error: [DELETE] /acronym/:acronym >> StatusCode:: 409, Message:: Acronyms doesn't exist
+2022-09-13 18:59:22 error: [DELETE] /acronym/:acronym >> StatusCode:: 409, Message:: Acronym doesn't exist
+2022-09-13 19:00:13 error: [DELETE] /acronym/:acronym >> StatusCode:: 409, Message:: Acronym doesn't exist
+2022-09-13 19:00:59 error: [DELETE] /acronym/:acronym >> StatusCode:: 409, Message:: Acronym doesn't exist
+2022-09-13 19:01:11 error: [DELETE] /acronym/:acronym >> StatusCode:: 409, Message:: Acronym doesn't exist
+2022-09-13 19:02:59 error: [DELETE] /acronym/:acronym >> StatusCode:: 409, Message:: Acronym doesn't exist
+2022-09-13 19:02:59 error: [DELETE] /acronym/:acronym >> StatusCode:: 409, Message:: Acronym doesn't exist
+2022-09-13 19:05:07 error: [DELETE] /acronym/:acronym >> StatusCode:: 409, Message:: Acronym doesn't exist
+2022-09-13 19:06:40 error: [DELETE] /acronym/trest >> StatusCode:: 409, Message:: Acronym doesn't exist
+2022-09-13 19:06:46 error: [DELETE] /acronym/trest >> StatusCode:: 409, Message:: Acronym doesn't exist
+2022-09-13 19:06:57 error: uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1310:16)
+    at listenInCluster (node:net:1358:12)
+    at Server.listen (node:net:1445:7)
+    at Function.listen (D:\__Work\wtf-project\node_modules\express\lib\application.js:635:24)
+    at App.listen (D:\__Work\wtf-project\src\app.ts:33:14)
+    at Object.<anonymous> (D:\__Work\wtf-project\src\server.ts:9:5)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Module.m._compile (D:\__Work\wtf-project\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\__Work\wtf-project\node_modules\ts-node\src\index.ts:1621:12)
+2022-09-13 19:07:49 error: [DELETE] /acronym/%7C >> StatusCode:: 409, Message:: Acronym doesn't exist
+2022-09-13 19:08:11 error: [DELETE] /acronym/ZUP >> StatusCode:: 409, Message:: Acronym doesn't exist
+2022-09-13 19:12:38 error: uncaughtException: ENOENT: no such file or directory, open '../../acronym.json'
+Error: ENOENT: no such file or directory, open '../../acronym.json'
+    at Object.openSync (node:fs:492:3)
+    at Object.readFileSync (node:fs:393:35)
+    at Object.readFile (D:\__Work\wtf-project\src\models\acronym.model.ts:6:24)
+    at new AcronymService (D:\__Work\wtf-project\src\services\acronym.service.ts:9:33)
+    at new AcronymController (D:\__Work\wtf-project\src\controllers\acronym.controller.ts:7:27)
+    at new AcronymRoute (D:\__Work\wtf-project\src\routes\acronym.route.ts:11:30)
+    at Object.<anonymous> (D:\__Work\wtf-project\src\server.ts:7:22)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Module.m._compile (D:\__Work\wtf-project\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+2022-09-13 19:13:17 error: uncaughtException: ENOENT: no such file or directory, open '../../acronym.json'
+Error: ENOENT: no such file or directory, open '../../acronym.json'
+    at Object.openSync (node:fs:492:3)
+    at Object.readFileSync (node:fs:393:35)
+    at Object.readFile (D:\__Work\wtf-project\src\models\acronym.model.ts:6:24)
+    at new AcronymService (D:\__Work\wtf-project\src\services\acronym.service.ts:9:33)
+    at new AcronymController (D:\__Work\wtf-project\src\controllers\acronym.controller.ts:7:27)
+    at new AcronymRoute (D:\__Work\wtf-project\src\routes\acronym.route.ts:11:30)
+    at Object.<anonymous> (D:\__Work\wtf-project\src\server.ts:7:22)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Module.m._compile (D:\__Work\wtf-project\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+2022-09-13 19:13:29 error: uncaughtException: ENOENT: no such file or directory, open '../../acronym.json'
+Error: ENOENT: no such file or directory, open '../../acronym.json'
+    at Object.openSync (node:fs:492:3)
+    at Object.readFileSync (node:fs:393:35)
+    at Object.readFile (D:\__Work\wtf-project\src\models\acronym.model.ts:6:24)
+    at new AcronymService (D:\__Work\wtf-project\src\services\acronym.service.ts:9:33)
+    at new AcronymController (D:\__Work\wtf-project\src\controllers\acronym.controller.ts:7:27)
+    at new AcronymRoute (D:\__Work\wtf-project\src\routes\acronym.route.ts:11:30)
+    at Object.<anonymous> (D:\__Work\wtf-project\src\server.ts:7:22)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Module.m._compile (D:\__Work\wtf-project\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+2022-09-13 19:13:39 error: uncaughtException: ENOENT: no such file or directory, open '../../acronym.json'
+Error: ENOENT: no such file or directory, open '../../acronym.json'
+    at Object.openSync (node:fs:492:3)
+    at Object.readFileSync (node:fs:393:35)
+    at Object.readFile (D:\__Work\wtf-project\src\models\acronym.model.ts:6:24)
+    at new AcronymService (D:\__Work\wtf-project\src\services\acronym.service.ts:9:33)
+    at new AcronymController (D:\__Work\wtf-project\src\controllers\acronym.controller.ts:7:27)
+    at new AcronymRoute (D:\__Work\wtf-project\src\routes\acronym.route.ts:11:30)
+    at Object.<anonymous> (D:\__Work\wtf-project\src\server.ts:7:22)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Module.m._compile (D:\__Work\wtf-project\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+2022-09-13 19:14:18 error: uncaughtException: The "path" argument must be of type string or an instance of Buffer or URL. Received an instance of Array
+TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string or an instance of Buffer or URL. Received an instance of Array
+    at Object.openSync (node:fs:484:10)
+    at Object.readFileSync (node:fs:393:35)
+    at Object.readFile (D:\__Work\wtf-project\src\models\acronym.model.ts:6:24)
+    at new AcronymService (D:\__Work\wtf-project\src\services\acronym.service.ts:9:33)
+    at new AcronymController (D:\__Work\wtf-project\src\controllers\acronym.controller.ts:7:27)
+    at new AcronymRoute (D:\__Work\wtf-project\src\routes\acronym.route.ts:11:30)
+    at Object.<anonymous> (D:\__Work\wtf-project\src\server.ts:7:22)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Module.m._compile (D:\__Work\wtf-project\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+2022-09-13 19:16:13 error: [POST] /acronym >> StatusCode:: 400, Message:: Unexpected token s in JSON at position 0
+2022-09-13 19:17:31 error: [PUT] /acronym/scs >> StatusCode:: 404, Message:: Authentication token missing

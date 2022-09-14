@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "D:\\__Work\\wtf-project\\src\\logs\\debug\\.3c0bfb03f8bd56fc75f9ab63202a31d5e01b5353-audit.json",
+    "files": [
+        {
+            "date": 1663044878992,
+            "name": "D:\\__Work\\wtf-project\\src\\logs\\debug\\2022-09-12.log",
+            "hash": "d12e46512aaa73d8f1631ebf4ba449505fc7b31ff0c6cd7990dd9c8b89d60bf6"
+        },
+        {
+            "date": 1663048828632,
+            "name": "D:\\__Work\\wtf-project\\src\\logs\\debug\\2022-09-13.log",
+            "hash": "70577f8e288f9357d7e2cd146b55a442164fb76b312f52b766b41ae497237de3"
+        }
+    ],
+    "hashType": "sha256"
+}

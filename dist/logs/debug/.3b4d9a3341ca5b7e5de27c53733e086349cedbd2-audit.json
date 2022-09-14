@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "D:\\__Work\\wtf-project\\dist\\logs\\debug\\.3b4d9a3341ca5b7e5de27c53733e086349cedbd2-audit.json",
+    "files": [
+        {
+            "date": 1663107744326,
+            "name": "D:\\__Work\\wtf-project\\dist\\logs\\debug\\2022-09-13.log",
+            "hash": "48721e2f860a4f649f6df9bf447a9c7c20a9e283c47b9dd53ce0207c9e58a0a4"
+        }
+    ],
+    "hashType": "sha256"
+}
