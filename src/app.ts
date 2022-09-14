@@ -11,6 +11,7 @@ import { NODE_ENV, PORT, LOG_FORMAT, ORIGIN, CREDENTIALS } from '@config';
 import { Routes } from '@interfaces/routes.interface';
 import errorMiddleware from '@middlewares/error.middleware';
 import { logger, stream } from '@utils/logger';
+const swaggerJSON = require('../swagger.json');
 
 class App {
   public app: express.Application;
@@ -59,19 +60,38 @@ class App {
   }
 
   private initializeSwagger() {
+    // const options = {
+    //   swaggerDefinition: {
+    //     info: {
+    //       title: 'REST API',
+    //       version: '1.0.0',
+    //       description: 'Example docs',
+    //     },
+    //   },
+    //   apis: ['swagger.yaml'],
+    // };
+
     const options = {
-      swaggerDefinition: {
+      definition: {
+        openapi: '3.0.0',
         info: {
-          title: 'REST API',
+          title: 'Acronym API',
           version: '1.0.0',
-          description: 'Example docs',
+          description: 'Build a REST API for the World Texting Foundation, also known as WTF',
         },
+
+        servers: [
+          {
+            url: 'http://localhost:3000',
+            description: 'My API Documentation',
+          },
+        ],
       },
-      apis: ['swagger.yaml'],
+      apis: ['swagger.json'],
     };
 
     const specs = swaggerJSDoc(options);
-    this.app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
+    this.app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerJSON));
   }
 
   private initializeErrorHandling() {

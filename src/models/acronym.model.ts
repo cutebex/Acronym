@@ -1,7 +1,19 @@
-import { Acronym } from '@/interfaces/acronym.interface';
-import data from '../../acronym.json';
+import fs from 'fs';
+import { HttpException } from '@exceptions/HttpException';
+const filePath = 'acronym.json';
 
-// password: password
-const acronymModel: any[] = [data];
+const readFile = () => {
+  return JSON.parse(fs.readFileSync(filePath, 'utf8').toString());
+};
 
-export default acronymModel;
+const writeFile = (newFile: string) => {
+  try {
+    fs.writeFileSync(filePath, newFile);
+  } catch (error) {
+    throw new HttpException(409, 'An error occured while writing the json file.');
+  }
+
+  return true;
+};
+
+export default { readFile, writeFile };

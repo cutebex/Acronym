@@ -22,8 +22,8 @@ class AcronymController {
   public createData = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
       const userData: CreateDataDto = req.body;
+      console.log('create ', userData);
       const createUserData: any = await this.acronymService.createData(userData);
-
       res.status(201).json({ data: createUserData, message: 'created' });
     } catch (error) {
       next(error);
@@ -45,8 +45,8 @@ class AcronymController {
   public deleteData = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
       const acronym: string = req.params.acronym;
+      console.log(req.params);
       const deleteUserData: any[] = await this.acronymService.deleteData(acronym);
-
       res.status(200).json({ data: deleteUserData, message: 'deleted' });
     } catch (error) {
       next(error);

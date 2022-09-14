@@ -5,13 +5,13 @@ tags:
 paths:
 
 # [GET] users/id
-  /acronym?from=50&limit=10&search=:
+  /acronym?from=50&limit=10:
     get:
       tags:
       - acronyms
       summary: Find Acronym
       parameters:
-      - name: id
+      - name: from
         in: path
         description: User Id
         required: true
@@ -101,15 +101,15 @@ definitions:
   users:
     type: object
     required:
-        - email
-        - password
+        - acronym
+        - definition
     properties:
-      email:
+      acronym:
         type: string
-        description: user Email
-      password:
+        description: acronym
+      definition:
         type: string
-        description: user Password
+        description: definition
 
 schemes:
  - https

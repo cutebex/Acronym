@@ -1,18 +1,12 @@
 import { CreateDataDto } from '@dtos/users.dto';
 import { HttpException } from '@exceptions/HttpException';
-// import { Acronym } from '@/interfaces/acronym.interface';
-import userModel from '@models/acronym.model';
+import acronymModel from '@models/acronym.model';
 import { isEmpty } from '@utils/util';
 import fs from 'fs';
 import path from 'path';
 
 class AcronymService {
-  public acronym = userModel;
-
-  public async findAllUser(): Promise<any[]> {
-    const acronym: any[] = this.acronym;
-    return acronym;
-  }
+  public acronym = acronymModel.readFile();
 
   public async findDataByFilter(from: number, limit: number, search: string): Promise<any> {
     if (limit < 1 || from < 0) {
@@ -21,9 +15,9 @@ class AcronymService {
     const findData: any = this.acronym;
     if (!findData) throw new HttpException(409, "Data doesn't exist");
     if (search === 'undefined') {
-      return findData[0].slice(from - 1, from + limit - 1);
+      return findData.slice(from - 1, from + limit - 1);
     } else {
-      const findAcronyms: any[] = this.acronym[0].filter(acronym => {
+      const findAcronyms: any[] = this.acronym.filter(acronym => {
         const key = Object.keys(acronym)[0];
         if (key.search(search) !== -1 || acronym[key].search(search) !== -1) {
           return acronym;
@@ -34,14 +28,14 @@ class AcronymService {
   }
 
   public async createData(data: CreateDataDto): Promise<any> {
-    this.acronym[0].map((key: any) => {
+    this.acronym.map((key: any) => {
       if (Object.keys(key)[0] === data.acronym) {
         throw new HttpException(409, 'Data already exist');
       }
     });
 
     const createUserData: any = { ...data };
-    this.acronym[0].push({ [data.acronym]: data.definition });
+    this.acronym.push({ [data.acronym]: data.definition });
     const newData = JSON.stringify(this.acronym);
     fs.writeFile(path.join(process.cwd() + '/acronym.json'), newData, 'utf8', function (err) {
       if (err) {
@@ -56,7 +50,7 @@ class AcronymService {
   public async updateData(acronym: string, definition: string): Promise<any[]> {
     if (isEmpty(definition)) throw new HttpException(400, 'definition is empty');
     const newArr = [];
-    this.acronym[0].map((key: any) => {
+    this.acronym.map((key: any) => {
       if (Object.keys(key)[0] === acronym) {
         newArr.push(definition);
       }
@@ -67,7 +61,7 @@ class AcronymService {
     }
 
     const newData = [];
-    this.acronym[0].map((key: any) => {
+    this.acronym.map((key: any) => {
       if (Object.keys(key)[0] === acronym) {
         newData.push({ [Object.keys(key)[0]]: definition });
       } else {
@@ -87,7 +81,7 @@ class AcronymService {
 
   public async deleteData(acronym: string): Promise<any[]> {
     const newArr = [];
-    this.acronym[0].map((key: any) => {
+    this.acronym.map((key: any) => {
       if (Object.keys(key)[0] === acronym) {
         newArr.push(acronym);
       }
@@ -98,7 +92,7 @@ class AcronymService {
     }
 
     const newData = [];
-    this.acronym[0].map((key: any) => {
+    this.acronym.map((key: any) => {
       if (Object.keys(key)[0] !== acronym) {
         newData.push({ [Object.keys(key)[0]]: key[Object.keys(key)[0]] });
       }
