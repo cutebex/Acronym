@@ -3,7 +3,7 @@
   "info": {
     "version": "1.0.0",
     "title": "Acronym API",
-    "description": "Build a REST API for the World Texting Foundation, also known as WTF",
+    "description": "REST API for the World Texting Foundation, also known as WTF",
     "contact": {
       "name": "OK"
     }
